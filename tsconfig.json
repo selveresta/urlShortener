@@ -1,0 +1,19 @@
+{
+	"compilerOptions": {
+		"target": "ES2016",
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true,
+		"module": "esnext",
+		"moduleResolution": "node",
+		"lib": ["es2016", "esnext", "dom"],
+		"outDir": "dist",
+		"strict": true,
+		"strictNullChecks": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"declaration": true,
+		"allowSyntheticDefaultImports": true
+	},
+	"include": ["src/index.ts"],
+	"exclude": ["build"]
+}
