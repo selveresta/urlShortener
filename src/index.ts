@@ -60,7 +60,7 @@ class URLShortener {
 			});
 		} else {
 			console.log("get from cache");
-			res.send(longURL || null)
+			res.send(longURL || null);
 		}
 	}
 }
@@ -90,7 +90,7 @@ const urlShorneter = new URLShortener();
 
 app.get("/", async (req: Request, res: Response) => {
 	const { code } = req.body;
-	const url = await urlShorneter.expandURL(code, res);
+	await urlShorneter.expandURL(code, res);
 });
 
 app.post("/", async (req: Request, res: Response) => {
